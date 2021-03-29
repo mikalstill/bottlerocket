@@ -58,7 +58,7 @@ fn create_provider() -> Result<Box<dyn PlatformDataProvider>> {
         }
     }
 
-    #[cfg(bottlerocket_platform = "vmware")]
+    #[cfg(any(bottlerocket_platform = "vmware", bottlerocket_platform = "kvm"))]
     {
         Ok(Box::new(provider::cdrom::CdromDataProvider))
     }

@@ -20,6 +20,9 @@ jobs:
           - variant: vmware-dev
             arch: x86_64
             supported: false
+          - variant: kvm-singleton
+            arch: x86_64
+            supported: false
       fail-fast: false
     steps:
       - uses: actions/checkout@v2

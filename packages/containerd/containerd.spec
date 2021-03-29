@@ -21,6 +21,7 @@ Source3: containerd-config-toml_aws-dev
 Source4: containerd-config-toml_aws-ecs-1
 Source5: containerd-tmpfiles.conf
 Source6: containerd-config-toml_vmware-dev
+Source7: containerd-config-toml_kvm-singleton
 Source1000: clarify.toml
 
 # TODO: submit this upstream.

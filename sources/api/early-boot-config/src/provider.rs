@@ -8,7 +8,7 @@ pub(crate) mod aws;
 #[cfg(bottlerocket_platform = "aws-dev")]
 pub(crate) mod local_file;
 
-#[cfg(bottlerocket_platform = "vmware")]
+#[cfg(any(bottlerocket_platform = "vmware", bottlerocket_platform = "kvm"))]
 pub(crate) mod cdrom;
 
 /// Support for new platforms can be added by implementing this trait.
